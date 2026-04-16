@@ -44,7 +44,7 @@ with open('final_database_v1.json', 'r') as file:
 def preprocess_query(query):
     
     # Ensure query is a string
-    if isinstance(query, list):
+    if is instance(query, list):
         query = " ".join(query)  # Combine list into a single string
     elif not isinstance(query, str):
         raise ValueError(f"Invalid query type: {type(query)}. Expected a string or list.")
